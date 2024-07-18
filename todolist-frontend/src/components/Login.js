@@ -12,7 +12,7 @@ const Login = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-                Accept: "application/json",
+                "Accept" : "application/json"
             },
             body:JSON.stringify({id:id,pw:pw}),
         })
@@ -24,9 +24,10 @@ const Login = () => {
                 return;
             }
             setLoginMember(map.loginMember);
+            setTodoList(map.todoList);
             setId("");
             setPw("");
-            alert("로그인 성공~!");
+            
         });
     };
     const logoutButton = () => {
@@ -72,4 +73,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginComponent;
