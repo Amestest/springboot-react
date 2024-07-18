@@ -12,8 +12,8 @@ public interface TodoService {
 	
 	int signup(TodoMember member);
 	
-	Map<String, Object>login(TodoMember member);
-		
+	Map<String, Object> login(TodoMember member);
+	
 	int insert(Todo todo);
 	
 	int update(Todo todo);
