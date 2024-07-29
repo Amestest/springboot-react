@@ -22,25 +22,24 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping //api 주소값 users
+	@GetMapping // api 주소값 users
 	public List<User> findAll(){
 		return userService.findAll();
 	}
-	//await axios.delete(`/users?id=${id}`);
+	
 	@PostMapping
 	public void insertUser(@RequestBody User user) {
 		userService.insertUser(user);
 	}
-	
 	//await axios.delete(`/users?id=${id}`);
-	@DeleteMapping("/{id}") //삭제를 진행하기 위해 만나는 주소(api) user/유저번호
-	public void deleteUser(@PathVariable int id) {
+	@DeleteMapping("/{id}") // 삭제를 진행하기 위해 만나는 주소(api) users/유저번호
+	public void deleteUser(@PathVariable int id   ) {
 		userService.deleteUser(id);
 	}
 	/*
-	//await axios.delete(`/users`,{params:{id}});
-	@DeleteMapping() //삭제를 진행하기 위해 만나는 주소(api) users
-	public void deleteUser(@RequestParam(name = "id") int id) {
+	//await axios.delete(`/users`,{params: {id} });
+	@DeleteMapping()		// 삭제를 진행하기 위해 만나는 주소 (api) users
+	public void deleteUser(@RequestParam(name = "id") int id   ) {
 		userService.deleteUser(id);
 	}
 	*/

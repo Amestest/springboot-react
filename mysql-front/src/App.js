@@ -3,13 +3,13 @@ import './App.css';
 import axios from 'axios';
 import UserTable from './component/UserTable';
 import UserForm from './component/UserForm';
-import UserForm from './component/UserForm';
+import EditUserForm from './component/EditUserForm';
 // select insert component 추가 작성
 function App() {
   const [users, setUsers] = useState([]); //유저 목록이 담길 빈 배열생성
 
   // 수정한 유저 정보를 잠시 담고 있을 변수 생성
-  const [UserToEdit, setUserToEdit] = useState(null);
+  const [userToEdit, setUserToEdit] = useState(null);
 
 
 
