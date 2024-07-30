@@ -17,8 +17,12 @@ const Login = () =>{
             .catch(err =>{      // 위 두 then 모두 문제가 생겼을 때 문제를 catch할 구문
                 console.error("Errorr user INFO : ", err);
             }) 
-        }
-    })
+        };
+
+        // 유저정보 기능을 실행하는 구문과 
+        유저정보();
+        
+    },[]) // 최초실행인지 주기적으로 계속 실행하는 효과인지 설정
 
 
     return (
