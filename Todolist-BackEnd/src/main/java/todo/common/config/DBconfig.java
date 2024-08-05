@@ -30,7 +30,7 @@ public class DBconfig {
 	@Autowired
 	private ApplicationContext applicationContext; 
 	// 현재 만든 TodoList-backend라는 폴더 흐름
-	// TodoList-backend라는 폴더 = Application = 나중에 폴더 안에 작성한 팡리이 하나의 어플이나 웹에서 작동하는 파일이 되는 것임
+	// TodoList-backend라는 폴더 = Application = 나중에 폴더 안에 작성한 파일이 하나의 어플이나 웹에서 작동하는 파일이 되는 것임
 	// 추후 자바나 자바스크립트 코드로 작성한 파일을 exe와 같은 확장자로 만들어 소비자들이 다운받고 실행할 수 있는
 	// 프로그램을 만들 수 있음
 
