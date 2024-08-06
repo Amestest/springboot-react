@@ -1,6 +1,6 @@
 package com.kh.common.config;
 
-import java.io.IOException;
+
 
 import javax.sql.DataSource;
 
@@ -9,6 +9,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.metadata.HikariDataSourcePoolMetadata;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +20,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration // Springboot 설정
-@PropertySource("classpaht:/config.properties")
+@PropertySource("classpath:/config.properties")
 public class DBConfig {
 	
 	@Autowired
