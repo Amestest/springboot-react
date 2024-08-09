@@ -46,7 +46,7 @@ public class PostServiceImpl implements PostService{
 		if(!uploadDirFile.exists()) {
 			System.out.println("폴더가 존재하지 않아 폴더를 생성합니다.");
 			if (!uploadDirFile.mkdirs()) {
-				throw new RuntimeException("폴더 생성 실패하엿습니다.");
+				throw new RuntimeException("폴더 생성 실패하였습니다.");
 				//mkdir = 폴더 1개 mkdirs = 하위폴더 모두 생성
 			} 
 		
@@ -101,6 +101,11 @@ public class PostServiceImpl implements PostService{
 		insertPost(post);
 		
 		
+	}
+	@Override
+	public void updatePost(Post post) {
+		// insertPost 그대로 쓰면됨
+		// 바탕화면에 이미지가 저장된 폴더에서 기존이미지를 삭제
 	}
 	
 }
