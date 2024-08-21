@@ -10,6 +10,7 @@ const Profile = () => {
   const [username, setUsername] = useState("");
   const [profile, setProfile] = useState([]);
   const [userId, setUserId] = useState(null);
+  
   //const로 변수명을 설정하거나 기능명 설정
   const 파일변경기능 = (e) => {
     //파일을 변경했을 때 프로필 썸네일에 이미지들 주소가 넘어갈 수 있도록 설정
@@ -65,12 +66,10 @@ const Profile = () => {
       })
       .then((data) => {
       */
-
         const data = response.data;
         게시물가져오기();
       });
   };
-
   // 3. axios then 버전
   const 이미지업로드3 = () => {
     const formData = new FormData();
