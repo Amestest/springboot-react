@@ -23,11 +23,14 @@ useEffect(() => {
                     <div className='chicken-name'>{chicken.chickenName}</div>
                     <div className='chicken-description'>{chicken.description}</div> 
                     <div className='chicken-price'>￦{chicken.price}원</div>
-                    <button className='detail-button' 
+                    <button className='detail-button' onClick={()=> navigate(`/chicken-detail/${chicken.id}`)}>상세보기</button>
                     
-                    onClick={()=> navigate(`/chicken-detail/${chicken.id}`)}
-                    
-                    >상세보기</button>
+                    {/* 
+                    navigate와 Link 사용에 있어 태그를 사용하느냐, 기능을 사용하느냐 차이 
+                    큰 차이는 없음
+                    <button className='detail-button' onClick={()=> navigate(`/chicken-detail/${chicken.id}`)}>상세보기</button>
+                    <button className='detail-button' Link to={`/chicken-detail/${chicken.id}`}>상세보기</button>
+                    */}
                 </li>
             ))}
         </div>
