@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import ChickenList from './component/ChickenList';
-import ChickenFrom from './component/ChickenForm';
-import { useState } from 'react';
+import ChickenForm from './component/ChickenForm';
 import Modal from './component/Modal';
+import { useState } from 'react';
 
 const MainRouter = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,13 +19,12 @@ const MainRouter = () => {
   
   return (
     <div className="app-container">
+      <h1>치킨 가게 메뉴 관리</h1>
       <button className='chicken-register-button' onClick={openModal}>메뉴등록하기</button>
       <ChickenList/>
 
-
-      
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ChickenFrom/>
+        <ChickenForm/>
       </Modal>
     </div>
   );

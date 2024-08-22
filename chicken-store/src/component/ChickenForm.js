@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import '../css/ChickenForm.css';
 
-const ChickenFrom = () =>{
+const ChickenForm = () =>{
     const [chickenName , setChickenName] = useState("");
     const [description, setDescription] = useState("");
     const [price, setPrice] = useState("");
@@ -42,4 +42,4 @@ const ChickenFrom = () =>{
     )
 }
 
-export default ChickenFrom;
+export default ChickenForm;
