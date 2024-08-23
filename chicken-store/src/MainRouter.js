@@ -24,7 +24,7 @@ const MainRouter = () => {
 
   const navigate = useNavigate(); //페이지 이동을 위한 hook
   const handle검색 = () => {
-    navigate('/search?query=${searchTerm}');// 검색페이지로 이동하면서 검색어 전달
+    navigate(`/search?query=${searchTerm}`);// 검색페이지로 이동하면서 검색어 전달
   }
 
 
