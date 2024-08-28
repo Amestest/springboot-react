@@ -63,8 +63,7 @@ return(
                 <p><strong>PM10 농도 : </strong>{item.pm10Value}</p>
                 <p><strong>NO2 농도 : </strong>{item.no2Value}</p>
                 <p><strong>O3 농도 : </strong>{item.o3Value}</p>
-            </div>
-            
+            </div>            
         ))}
     </div>
     </>
